@@ -18,7 +18,7 @@ html, body {
     --text: hsl(0, 0%, 5%);
     --text-muted: hsl(0, 0%, 30%);
     --accent: hsl(354, 90%, 50%);
-    --margin-sides: 12rem;
+    --margin-sides: 4rem;
     --flex-direction: row;
 }
 #nav-bar nav{
@@ -68,6 +68,7 @@ nav::after {
     outline: transparent;
     border: transparent;
     background-color: var(--accent);
+    text-decoration: none;
 }
 @media screen and (max-width: 950px){
     .nav-links {
@@ -76,8 +77,16 @@ nav::after {
 }
 #services {
     display: flex;
-    background-color: var(--bg);
+    background-color: var(--bg-dark);
     padding: 0 var(--margin-sides);
+    padding-top: 120px;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.heading {
+    font-size: 2rem;
 }
 .service-box-row {
     display: flex;
@@ -86,5 +95,55 @@ nav::after {
     width: 100%;
 }
 .service-box {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg);
+    width: 100%;
+    min-height: 650px;
+}
+.service-box img {
+    width: 100%;
+}
+.text-area {
+    padding: 1.5rem;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.service-box-paragraph {
+    padding: 1rem 0;
+}
+.service-box a {
+    display: inline-block;
+    margin-top: auto;
+    align-self: flex-start
 
+}
+.divider {
+    border: none;
+    height: 1px;
+    background-color: hsl(0, 0%, 70%);
+    margin: 1.5rem 0;
+    width: 100%;
+}
+#footer {
+    background-color: var(--text-muted);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem var(--margin-sides);
+    gap: 1rem;
+    color: white;
+}
+#footer div {
+    display: flex;
+    gap: 20px;
+}
+#footer div img {
+    height: 40px;
+}
+#footer div a {
+    color: var(--text-mvp);
+    text-decoration: none;
 }
