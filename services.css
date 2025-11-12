@@ -18,7 +18,7 @@ html, body {
     --text: hsl(0, 0%, 5%);
     --text-muted: hsl(0, 0%, 30%);
     --accent: hsl(354, 90%, 50%);
-    --margin-sides: 4rem;
+    --margin-sides: 12rem;
     --flex-direction: row;
 }
 #nav-bar nav{
@@ -146,4 +146,5 @@ nav::after {
 #footer div a {
     color: var(--text-mvp);
     text-decoration: none;
+
 }
